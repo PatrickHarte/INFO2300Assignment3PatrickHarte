@@ -1,0 +1,112 @@
+<!--
+PROG2430 Midterm Exam
+Created by: Patrick Harte
+February 13th, 2023
+Email: pharte2653@conestogac.on.ca
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+     maximum-scale=1.0, user-scalable=no">
+    <title>Patrick Harte Midterm</title>
+
+    <!--jQuery-->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <!--jQuery Mobile-->
+    <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+    <!--jQuery Validation-->
+    <script src="js/lib/jquery.validate.js"></script>
+    <!--jQUery Mobile Stylesheet-->
+    <link rel="stylesheet" href="css/lib/jquery.mobile-1.4.5.css">
+    <!--our scripts-->
+    <script src="js/facade.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/global.js"></script>
+    <!--our styles-->
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+
+<!--About Page-->
+    <div id="aboutPage" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="a">
+            <h1>About</h1>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="#aboutPage" data-icon="star" class="ui-btn-active ui-state-persist">About</a>
+                    </li>
+                    <li>
+                        <a href="#registerPage" data-icon="grid">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <p>Name: Patrick Harte</p>
+            <p>Section: Section 3</p>
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h1>Midterm Exam</h1>
+        </footer>
+    </div>
+<!--Register Page-->
+<div id="registerPage" data-role="page">
+    <header data-role="header" data-position="fixed" data-theme="a">
+        <h1>Register</h1>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#aboutPage" data-icon="star">About</a>
+                </li>
+                <li>
+                    <a href="#registerPage" data-icon="grid" class="ui-btn-active ui-state-persist">Register</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+        <form id="frmRegister" name="frmRegister">
+        <p>Username</p>
+        <input type="text" name="txtUserName" id="txtUserName">
+        <p>Full Name</p>
+        <input type="text" name="txtFullName" id="txtFullName">
+        <p>Email</p>
+        <input type="text" name="txtEmail" id="txtEmail">
+        <p>Password</p>
+        <input type="text" name="txtPassword" id="txtPassword">
+        <p>Verify Password</p>
+        <input type="text" name="txtVerifyPassword" id="txtVerifyPassword">
+        <p>Favourite Platform</p>
+
+        <fieldset data-role="controlgroup" data-type="horizontal">
+        <input type="radio" id="radPS5" name="radPlatform" checked>
+        <label for="radPS5">PS5</label>
+            <input type="radio" id="radPS4" name="radPlatform">
+            <label for="radPS4">PS4</label>
+            <input type="radio" id="radXBox" name="radPlatform">
+            <label for="radXBox">XBox</label>
+            <input type="radio" id="radPC" name="radPlatform">
+            <label for="radPC">PC</label>
+
+        </fieldset>
+        <button type="button" id="btnRegister" name="btnRegister" data-icon="check"
+                class="ui-btn-active ui-state-persist">Register</button>
+        </form>
+
+        <div id="message">
+
+        </div>
+    </section>
+
+    <footer data-role="footer" data-position="fixed">
+        <h1>Midterm Exam</h1>
+    </footer>
+</div>
+</body>
+</html>
